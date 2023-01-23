@@ -304,8 +304,11 @@ header .mobile {
 /* Filters Section */
 
 #filters-section {
-  padding: 4rem 0;
+  padding: 4rem 1%;
   background-color: #4a4a4a;
+  display: grid;
+  justify-content: center;
+
 }
 
 #filters-section .content {
@@ -326,10 +329,22 @@ header .mobile {
   color: white;
 }
 
-#filters-section .images-container {
-  max-width: 100%;
-  padding: 0 1%;
+.images-container {
+  display: grid;
+  grid-template-columns: max-content;
+  grid-template-rows: 1fr;
+  width: 100%;
+  margin: 1%;
+  justify-content: center;
+  margin-bottom: 4rem;
+  padding: none;
 }
+
+#filters-section .images-container img {
+ width: 150%;
+
+}
+
 
 @media only screen and (max-width: 760px) {
   #filters-section {
@@ -367,8 +382,14 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
-  padding: 5rem 0;
+#quotes-section .content {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
 }
 
 #quotes-section quote {
@@ -378,10 +399,13 @@ header .mobile {
   line-height: 1.1;
   font-style: italic;
   color: #4a4a4a;
+  justify-content:space-around ;
 }
+
 
 #quotes-section quote-citation {
   height: 1.875rem;
+  padding-left: 1.875rem;
 }
 
 @media only screen and (max-width: 760px) {
